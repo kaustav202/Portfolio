@@ -10,8 +10,34 @@
     .container  .lists { display: grid; text-align: center; margin: 10px; transition: 0.3s; color:#fff; background: #333; padding: 20px; max-height: 150px;}
       .container  .lists:hover{ background:#e91e63; }
       .container .lists .sub {position: relative; margin-bottom: 0px; margin-right: 20px; padding:5px; max-height: 100px; float: left; width: 40%; }
-      .intro { min-height: 200px; font-family: Rubik;color:white; margin-left: 35px;padding:10px;}
+      .intro {  background-color: #e91e63; min-height: 200px; max-height: 26vh; font-family: Rubik;color:white; margin-left: 35px;padding:10px;}
+      .intro span>p{
+          font-size: 22px;
+      }
       .contact{  float: right; max-height: 300px;color: white; width: 250px; }
+      .contact a{
+          color: inherit;
+          text-decoration: none;
+      }
+      .contact a:hover{
+          color: rgba(204, 85, 85, 0.959) ;
+      }
+      .contact :nth-child(7){
+          margin-left: 4px;
+          top: 5px;
+      }
+      .contact :nth-child(7)>span{
+          left: 5;
+      }
+      .contact a>span{
+          position: relative;
+          top: -3;
+          left: 3;
+      }
+      .contact :nth-child(1){
+          margin-left: 3px;
+          margin-top: 10;
+      }
       .services :nth-child(3){
           padding-top: 35px;
       }
@@ -251,9 +277,12 @@
    </section>
 
    <div class ="contact">
-     <img src="https://img.icons8.com/dusk/40/000000/student-center.png"/> btech CSE MSIT Kolkata   
-    <img src="https://img.icons8.com/clouds/40/000000/gmail.png"/>  dj.snake735@gmail.com </br>
-     <img src="https://img.icons8.com/fluent/40/000000/github.png"/>  kaustav287
+   <a> <img src="https://img.icons8.com/office/35/000000/open-resume.png"/><span>Resume</span></a></br>
+    <a href="mailto:gkaustav57@gmail.com"> <img src="https://img.icons8.com/clouds/40/000000/gmail.png"/>  <span>dj.snake735@gmail.com</span></a></br>
+    <a href="https://github.com/kaustav202"> <img src="https://img.icons8.com/fluent/40/000000/github.png"/>  <span>kaustav287</span> </a></br>
+    <a href="https://www.linkedin.com/in/kgan31" class="lin"> <img src="https://img.icons8.com/doodle/35/000000/linkedin--v2.png"/> <span> linkdin </span></a></br>
+     
+     
      </div>
 
       <div class = "intro">
