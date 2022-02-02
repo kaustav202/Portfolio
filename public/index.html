@@ -6,10 +6,49 @@
          @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap');
 
       body{ background: #222; align-self: center ; justify-content: center; }
-      .container{top:55px; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px , 1fr)); grid-template-rows: minmax(100px , auto); max-width:100%;grid-gap:20px }
-    .container  .lists { display: grid; text-align: center; margin: 10px; transition: 0.3s; color:#fff; background: #333; padding: 20px; max-height: 150px;}
-      .container  .lists:hover{ background:#e91e63; }
-      .container .lists .sub {position: relative; margin-bottom: 0px; margin-right: 20px; padding:5px; max-height: 100px; float: left; width: 40%; }
+
+      .container{margin:55px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(65vmin , 1fr)); grid-template-rows: repeat(5, minmax(220px , auto)); grid-gap:20px }
+      .container  .lists { display: flex; text-align: center; margin: 10px; transition: 0.4s; color:#fff; background: #333; padding: 5px; max-height: auto;border-radius: 0%;}
+      .container  .lists:hover{  }
+      .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 70%; float: left; width: 40%; background-color: #0f9d58; border-radius: 50%;border: 1px solid #000000;
+  box-shadow: 0 20px 10px -10px #25293450;}
+      .container .lists .sub img{ height: 100%; width: 100%; border-radius: 50%;   box-shadow: -19px 13px 22px -6px rgba(0,0,0,1);}
+      .info{min-height: 100%; width: 100%;}
+      .info h3{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+        color: #576eb9ad;
+        width: 100%;
+        margin-left: 0;
+        line-height: 1.5rem;
+        text-align: left;
+      }
+      .details{
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          display: none;
+          transition: ease-in .4s;
+      }
+      .details h3{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+        color: white;
+      }
+      .container  .lists:hover .sub{
+          display: none;
+      }
+      .container  .lists:hover .info{
+          display: none;
+      }
+      .container  .lists:hover .details{
+          display: block;
+          background-color: #e91e63;
+      }
       .intro {  min-height: 200px; max-height: 26vh; font-family: Rubik;color:white; margin-left: 35px;padding:0px; margin-right: 18%; margin-top: 30px;}
       .intro_head { color: white;}
       .intro span>p{
@@ -177,9 +216,9 @@
           margin-left: 30px;
       }
        ol li{
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           padding: 20px 30px ;
-          margin: 10px 0;
+          margin: 15px 0;
           background: rgb(43, 42, 42);
           z-index: 100;
           position: relative;
@@ -202,7 +241,7 @@
           z-index: -1;
           transition: all .4s;
           border-radius: 1.5rem;
-          left: 5px;
+          left: 3px;
       }
       ol li:hover::before{
           width: 100%;
@@ -224,6 +263,7 @@
       }
       ol li:hover{
           transform: translateX(20px);
+          border-radius: 1.5rem;
       }
       .libraries{
           width: 40%;
@@ -369,7 +409,13 @@
 
     <div class = "lists">
         <div class="sub">
-            <img src="https://img.icons8.com/color/54/000000/python.png"/>
+            <img src="https://i.postimg.cc/cC3xxxw6/proj-rtt.png"/>
+        </div>
+        <div class="info">
+               <h3> Heyy this is for testing The App</h3>
+        </div>
+        <div class="details">
+            <h3>Real time twitter metrics</h3>
         </div>
     </div>
 
@@ -377,28 +423,49 @@
           <div class="sub">
              <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png"/> 
           </div>
+          <div class="info">
+            <h3> Heyy</h3>
+        </div>
+        <div class="details">
+            
+        </div>
     </div>
 
       <div class = "lists">
           <div class="sub">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-              width="60" height="60"
-              viewBox="0 0 172 172"
-              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M80.625,5.375c-41.55943,0 -75.25,33.69057 -75.25,75.25c0,41.55943 33.69057,75.25 75.25,75.25c41.55943,0 75.25,-33.69057 75.25,-75.25c0,-41.55943 -33.69057,-75.25 -75.25,-75.25z" fill="#e1ebf2"></path><path d="M80.625,10.75c38.528,0 69.875,31.347 69.875,69.875c0,38.528 -31.347,69.875 -69.875,69.875c-38.528,0 -69.875,-31.347 -69.875,-69.875c0,-38.528 31.347,-69.875 69.875,-69.875M80.625,0c-44.5265,0 -80.625,36.0985 -80.625,80.625c0,44.5265 36.0985,80.625 80.625,80.625c44.5265,0 80.625,-36.0985 80.625,-80.625c0,-44.5265 -36.0985,-80.625 -80.625,-80.625z" fill="#b3b6bc"></path><path d="M80.625,21.5c-32.65384,0 -59.125,26.47116 -59.125,59.125c0,32.65384 26.47116,59.125 59.125,59.125c32.65384,0 59.125,-26.47116 59.125,-59.125c0,-32.65384 -26.47116,-59.125 -59.125,-59.125z" fill="#3c6f93"></path><g fill="#ffffff"><path d="M107.5,118.25h-13.49125l-11.10475,-20.1455c-0.99975,-1.849 -1.978,-3.44 -2.93475,-4.7515c-0.95675,-1.3115 -1.92425,-2.3865 -2.91325,-3.225c-0.989,-0.8385 -2.064,-1.45125 -3.225,-1.83825c-1.161,-0.387 -2.4725,-0.5805 -3.92375,-0.5805h-4.6655v30.54075h-11.49175v-75.25h22.8975c3.268,0 6.26725,0.41925 9.01925,1.25775c2.752,0.8385 5.1385,2.107 7.181,3.8055c2.0425,1.6985 3.6335,3.81625 4.773,6.35325c1.15025,2.537 1.72,5.504 1.72,8.89025c0,2.65525 -0.3655,5.0955 -1.0965,7.32075c-0.7095,2.22525 -1.7415,4.20325 -3.08525,5.934c-1.34375,1.73075 -2.967,3.2035 -4.859,4.429c-1.892,1.2255 -4.00975,2.1715 -6.37475,2.838v0.215c1.25775,0.774 2.365,1.6125 3.30025,2.54775c0.93525,0.91375 1.8275,1.8705 2.666,2.84875c0.8385,0.97825 1.677,2.0855 2.494,3.3325c0.82775,1.247 1.7415,2.6875 2.74125,4.33225zM65.24175,53.1265v24.45625h9.6105c1.7845,0 3.4185,-0.301 4.9235,-0.89225c1.505,-0.59125 2.80575,-1.45125 3.90225,-2.56925c1.0965,-1.118 1.9565,-2.48325 2.56925,-4.09575c0.61275,-1.6125 0.9245,-3.40775 0.9245,-5.40725c0,-3.60125 -1.0535,-6.41775 -3.14975,-8.4495c-2.107,-2.03175 -5.12775,-3.04225 -9.073,-3.04225z"></path></g></g></g></svg>
+            <img src="https://i.postimg.cc/pTWxNQXG/proj-gl.png"/>      
+        </div>
+          <div class="info">
+            <h3> Heyy</h3>
           </div>
+          <div class="details">
+            
+        </div>
     </div>
 
  
       <div class = "lists">
           <div class="sub">
-            <img src="https://img.icons8.com/plasticine/65/000000/react.png"/>
+            <img src="https://i.postimg.cc/MKjfsB32/proj-da.png"/>
           </div>
+          <div class="info">
+            <h3> Heyy</h3>
+        </div>
+        <div class="details">
+            <h3></h3>
+        </div>
     </div>
 
       <div class = "lists">
           <div class="sub">
-           <img src="https://img.icons8.com/color/70/000000/javascript.png"/>
+           <img src="https://i.postimg.cc/43pQ9VG1/proj-ns.png"/>
           </div>
+          <div class="info">
+            <h3> Heyy</h3>
+         </div>
+         <div class="details">
+            
+        </div>
        </div>
 </div>
 
