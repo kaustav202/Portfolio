@@ -7,23 +7,26 @@
 
       body{ background: #222; align-self: center ; justify-content: center; }
 
-      .container{margin:55px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(65vmin , 1fr)); grid-template-rows: repeat(5, minmax(220px , auto)); grid-gap:20px }
-      .container  .lists { display: flex; text-align: center; margin: 10px; transition: 0.4s; color:#fff; background: #333; padding: 5px; max-height: auto;border-radius: 0%;}
+      .container{margin:85px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(65vmin , 1fr)); grid-template-rows: repeat(5, minmax(220px , auto)); grid-gap:30px }
+      .container  .lists { display: flex; text-align: center; margin: 10px; transition: 0.4s; color:#fff; background: #333; padding: 0px; max-height: auto;border-radius: 3%;     box-shadow: 0px 5px 10px 5px rgb(243, 149, 193);}
       .container  .lists:hover{  }
-      .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 70%; float: left; width: 40%; background-color: #0f9d58; border-radius: 50%;border: 1px solid #000000;
-  box-shadow: 0 20px 10px -10px #25293450;}
+      .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 70%; float: left; width: 40%; background-color: #0f9d58; border-radius: 50%;border: 1px solid black;
+       }
       .container .lists .sub img{ height: 100%; width: 100%; border-radius: 50%;   box-shadow: -19px 13px 22px -6px rgba(0,0,0,1);}
       .info{min-height: 100%; width: 100%;}
       .info h3{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 0;
-        color: #576eb9ad;
-        width: 100%;
-        margin-left: 0;
+        color: #e91e63;
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-top: 45px;
         line-height: 1.5rem;
         text-align: left;
+
       }
       .details{
           margin: 0;
@@ -31,6 +34,7 @@
           height: 100%;
           display: none;
           transition: ease-in .4s;
+          border-radius: 3%;
       }
       .details h3{
         font-size: 1.6rem;
@@ -38,6 +42,7 @@
         font-weight: bold;
         margin-bottom: 0;
         color: white;
+        display: none;
       }
       .container  .lists:hover .sub{
           display: none;
@@ -110,7 +115,7 @@
       .p_skills >span{
           font-family: 'Satisfy';
           font-weight: 40px;
-          font-size: 40px;
+          font-size: 50px;
           text-align: center;
           line-height: 100%;
           color: #e91e63;
@@ -402,7 +407,7 @@
 
 
            <h1 class="p_skills">
-              <span>Programming Skills</span>
+              <span>Projects</span>
           </h1>
 
     <div class = container>
@@ -412,7 +417,7 @@
             <img src="https://i.postimg.cc/cC3xxxw6/proj-rtt.png"/>
         </div>
         <div class="info">
-               <h3> Heyy this is for testing The App</h3>
+               <h3> real time twitter data analysis</h3>
         </div>
         <div class="details">
             <h3>Real time twitter metrics</h3>
