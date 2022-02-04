@@ -7,10 +7,10 @@
 
       body{ background: #222; align-self: center ; justify-content: center; }
 
-      .container{margin:85px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(65vmin , 1fr)); grid-template-rows: repeat(5, minmax(220px , auto)); grid-gap:30px }
-      .container  .lists { display: flex; text-align: center; margin: 10px; transition: 0.4s; color:#fff; background: #333; padding: 0px; max-height: auto;border-radius: 3%;     box-shadow: 0px 5px 10px 5px rgb(243, 149, 193);}
-      .container  .lists:hover{  }
-      .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 70%; float: left; width: 40%; background-color: #0f9d58; border-radius: 50%;border: 1px solid black;
+      .container{margin:85px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(65vmin , 1fr)); grid-template-rows: repeat(3, minmax(220px , auto)); grid-gap:30px ;}
+      .container  .lists { display: flex; text-align: center; margin: 10px; transition:all 0.4s linear 1s; color:#fff; background: #333; padding: 0px; max-height: auto;border-radius: 3%;     box-shadow: 0px 5px 10px 5px rgb(243, 149, 193);}
+      
+      .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 70%; float: left; width: 40%; border-radius: 50%;border: 1px solid black;
        }
       .container .lists .sub img{ height: 100%; width: 100%; border-radius: 50%;   box-shadow: -19px 13px 22px -6px rgba(0,0,0,1);}
       .info{min-height: 100%; width: 100%;}
@@ -44,6 +44,51 @@
         color: white;
         display: none;
       }
+      .desc{
+          font-size: 1.2rem;
+          margin: 30px 25px 0px 30px;
+          width: auto;
+          height: auto;
+          text-align: start;
+      }
+      .buttons{
+          height: 40px;
+          margin: 5% 10px 10px 50px;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+      }
+      .buttons a{
+        width: 45%;
+        padding: .5rem;
+        border: none;
+        border-bottom: 2px solid #f300b4;
+        color: #252934;
+        background: #fafafa;
+        font-size: 1.2rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 2px;
+      }
+      .buttons img{
+        font-size: .8rem;
+        float: right;
+        position: relative;
+        width: auto;
+        right: 45px;
+        top: 5px;
+      }
+      .buttons:nth-child(2) img{
+          right: 75;
+      }
+      .buttons a:hover{
+        background: #f300b4;
+        color: #fafafa;
+      }
+      .container  .lists:hover {
+          transform: translate(4);
+      }
       .container  .lists:hover .sub{
           display: none;
       }
@@ -52,7 +97,6 @@
       }
       .container  .lists:hover .details{
           display: block;
-          background-color: #e91e63;
       }
       .intro {  min-height: 200px; max-height: 26vh; font-family: Rubik;color:white; margin-left: 35px;padding:0px; margin-right: 18%; margin-top: 30px;}
       .intro_head { color: white;}
@@ -206,7 +250,7 @@
           display: flex;
           align-items: baseline;
           justify-content: flex-start;
-          margin-top: 30px;
+          margin-top:45px;
       }
       .soft_skills{
           width: 40%;
@@ -289,7 +333,7 @@
           text-align: center;
           line-height: 1.5;
           color:#fffc33;
-          margin-top: 90px;
+          margin-top: 150px;
       }
       .one .s_text{
           color: white;
@@ -421,6 +465,12 @@
         </div>
         <div class="details">
             <h3>Real time twitter metrics</h3>
+            <div class="desc">
+                This project analyses tweets in real time by connecting to the twitter streaming API and determines various metrics about the tweets on a particular keywords. This includes the total volume, average over time, proportion of tweets on keyword.
+            </div>
+            <div class="buttons">
+                <a href="https://github.com/kaustav202/RealTime-TwitterDataAnalysis">View Source<img src="https://img.icons8.com/ios/14/000000/external-link.png"/></a><a href="https://github.com/kaustav202/RealTime-TwitterDataAnalysis">Try Live<img src="https://img.icons8.com/ios/14/000000/external-link.png"/></a>
+            </div>
         </div>
     </div>
 
@@ -499,30 +549,30 @@
           
       </section>
 
-    <div class="py_libraries">
-          <div class="pylib_heading">
-              <h1>Python Libraries</h1>
-          </div>
-              <li>pandas</li>
-              <li>numpy</li>
-              <li>matplotlib</li>
-              <li>Seaborn </li>
-              <li>requests</li>
-              <li>sqlite</li>
-    </div>
+ <!--               <div class="py_libraries">
+                    <div class="pylib_heading">
+                        <h1>Python Libraries</h1>
+                    </div>
+                        <li>pandas</li>
+                        <li>numpy</li>
+                        <li>matplotlib</li>
+                        <li>Seaborn </li>
+                        <li>requests</li>
+                        <li>sqlite</li>
+                </div>
 
-      <div class="ack">
-          <div class="training">
-         <h1> Trainings and Certifications</h1>
-          </div>
+                <div class="ack">
+                    <div class="training">
+                    <h1> Trainings and Certifications</h1>
+                    </div>
 
-      <div class="projects">
-          <h1>Projects</h1>
-      </div>
-      </div>
+                <div class="projects">
+                    <h1>Achievements</h1>
+                </div>
+                </div>
 
-      <div class="tools">
-          <h1 class="tools_heading">Softwares and Tools</h1>
-      </div>
+                <div class="tools">
+                    <h1 class="tools_heading">Softwares and Tools</h1>
+                </div> -->
   </body>
  </html>
