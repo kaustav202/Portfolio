@@ -17,7 +17,23 @@
         .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 70%; float: left; width: 40%; border-radius: 50%;border: 1px solid black;opacity: 1;transition: all 0.1s ease;
          }
         .container .lists .sub img{ height: 100%; width: 100%; border-radius: 50%;   box-shadow: -19px 13px 22px -6px rgba(0,0,0,1);}
-        .info{min-height: 100%; width: 100%; opacity: 1; transition: all  0.1s ease;}
+        .info{height: 50%; width: 100%; opacity: 1; transition: all  0.1s ease;}
+        
+        .labels{
+            width: 50%;
+            position: absolute;
+            float: left;
+            margin-top: 19%;
+            left: 36%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            opacity: 1; transition: all  0.1s ease;
+        }
+        .labels>img{
+            margin-left: 10px;
+            border-radius: 5px;
+        }
         .info h3{
           font-family: Amiri;
           font-size: 1.4rem;
@@ -109,6 +125,10 @@
            transition: all 0s;
         }
         .container  .lists:hover .info{
+            opacity: 0;
+            transition: all 0s;
+        }
+        .container  .lists:hover .labels{
             opacity: 0;
             transition: all 0s;
         }
@@ -493,6 +513,7 @@
           <div class="info">
                  <h3> real time twitter data analysis</h3>
           </div>
+
           <div class="details">
               <h3>Real time twitter metrics</h3>
               <div class="desc">
@@ -530,6 +551,12 @@
           </div>
             <div class="info">
               <h3> News Accumulator</h3>
+            </div>
+            <div class = "labels">
+                <img src="https://img.shields.io/badge/xml.minidom-%20%20-lightgrey">
+                <img src="https://img.shields.io/badge/pandas-%20-lightgrey">
+                <img src="https://img.shields.io/badge/beautiful%20soup-%20-lightgrey">
+                <img src="https://img.shields.io/badge/api-%20-lightgrey">
             </div>
             <div class="details">
               <h3></h3>
