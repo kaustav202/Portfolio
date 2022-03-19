@@ -312,7 +312,7 @@
          ol{
             width: 100%;
             list-style: none;
-            margin-left: 90px;
+            margin-left: 20px;
         }
          ol li{
             font-size: 1.1rem;
@@ -344,8 +344,35 @@
             border-radius: 1.5rem;
             left: 3px;
         }
-        ol li:hover::before{
-            width: 100%;
+        .soft_skills li:nth-child(1):hover:before{
+            width: 78%;
+        }
+        .soft_skills li:nth-child(2):hover:before{
+            width: 92%;
+        }
+        .soft_skills li:nth-child(3):hover:before{
+            width: 85%;
+        }
+        .soft_skills li:nth-child(4):hover:before{
+            width: 81%;
+        }
+        .soft_skills li:nth-child(5):hover:before{
+            width: 80%;
+        }
+        .libraries li:nth-child(1):hover:before{
+            width: 84%;
+        }
+        .libraries li:nth-child(2):hover:before{
+            width: 90%;
+        }
+        .libraries li:nth-child(3):hover:before{
+            width: 87%;
+        }
+        .libraries li:nth-child(4):hover:before{
+            width: 92%;
+        }
+        .libraries li:nth-child(5):hover:before{
+            width: 78%;
         }
         .soft_skills ol li:nth-child(1)::before{
             background: #4285f4;
@@ -365,19 +392,19 @@
 
         .libraries ol li:nth-child(1)::before{
             
-            background: #0f9d58; 
+            background: #4285f4; 
         }
         .libraries li:nth-child(2)::before{
-            background: #0f9d58;
+            background: #4285f4;
         }
         .libraries li:nth-child(3)::before{
-            background: #0f9d58;
+            background: #4285f4;
         }
         .libraries ol li:nth-child(4)::before{
-            background:  #db4437;
+            background:  #0f9d58;
         }
         .libraries ol li:nth-child(5)::before{
-            background: #a9e029bb;
+            background: #d1ce17d7;
         }
         ol li:hover{
             transform: translateX(20px);
@@ -389,6 +416,7 @@
             justify-content: flex-start;
             align-items: center;
             color: white;
+            margin-left: 50px;
         }
         .libraries> ol li{
             max-height: 4px;
