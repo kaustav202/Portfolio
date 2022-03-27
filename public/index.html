@@ -557,6 +557,24 @@
             height:22px;
         }
 
+
+        .frame-items:nth-child(3)> .thought{
+           
+            top: -56%;
+            left: 85%;
+        }
+
+        .frame-items:nth-child(4)> .thought{
+           
+           top: -14%;
+           left: 70%;
+           background-color: rgb(51, 50, 50);
+       }
+       .frame-items:nth-child(4) .thought::before ,
+       .frame-items:nth-child(4) .thought::after{
+           background-color: rgb(51, 50, 50);
+       }
+
         .frame-items img:hover ~ .thought, .frame-items svg:hover ~ .thought,
         .frame-items> div:hover ~ .thought{
 	        opacity: 1;
@@ -567,7 +585,7 @@
         .frame-items> div:not(:hover) ~ .thought{
             transition:  opacity 0.4s ease-in-out 0s;
         }
-        
+
       </style>
         
     </head>
