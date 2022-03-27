@@ -537,6 +537,8 @@
             align-items:center;
             justify-content:center;
             text-align:center;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out 0.7s;
         }
 
         .thought:before,
@@ -555,6 +557,17 @@
             height:22px;
         }
 
+        .frame-items img:hover ~ .thought, .frame-items svg:hover ~ .thought,
+        .frame-items> div:hover ~ .thought{
+	        opacity: 1;
+            transition:  opacity 0.4s ease-in-out 0s;
+        }
+
+        .frame-items img:not(:hover) ~ .thought, .frame-items svg:not(:hover) ~ .thought,
+        .frame-items> div:not(:hover) ~ .thought{
+            transition:  opacity 0.4s ease-in-out 0s;
+        }
+        
       </style>
         
     </head>
