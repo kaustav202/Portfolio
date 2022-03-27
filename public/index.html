@@ -461,11 +461,12 @@
             margin-left: 5%;
             padding: 0px;
         }
+
        .contacts p img { max-height: 50px;  }
         @media only screen and ( max-width : 900px ){
 
         }
-  
+
         h5{
             position: absolute;
             left: 50%;
@@ -481,13 +482,15 @@
             z-index: -1;
 	        opacity: 0;
         }
-        
+
         .frame-items > img{
             transition: transform 0.3s, filter 0.3s;
         }
+
         .frame-items > svg{
             transition: transform 0.3s, filter 0.3s;
         }
+
         #react_img {
             transition: transform 0.3s, filter 0.3s;
         }
@@ -519,7 +522,38 @@
 	        opacity: 1;
         }
 
-        
+        .thought {
+            position: absolute;
+            float: left;
+            display:flex;
+            background-color:rgb(26, 25, 25);
+            padding:20px;
+            border-radius:50%;
+            width:36px;
+            height:25px;
+            top: -50%;
+            left: 68%;
+            position:absolute;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+        }
+
+        .thought:before,
+        .thought:after {
+        content:"";
+        background-color: rgb(26, 25, 25);
+        border-bottom-right-radius: 130%;
+        display:block;
+        position:absolute;
+        top: 56px;
+        }
+
+        .thought:after {
+            right:40px;
+            width:20px;
+            height:22px;
+        }
 
       </style>
         
@@ -820,6 +854,10 @@
                                 viewBox="0 0 172 172"
                                 style=" fill:#000000;"><g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none" fill-rule="nonzero"></path><g fill="#035c4d" fill-rule="evenodd"><path d="M28.66667,57.33333v45.31483c-4.81958,0.91017 -7.34942,1.2685 -11.18717,1.2685c-11.49533,-0.01075 -17.4795,-5.14208 -17.4795,-14.99267c0,-9.49225 6.34608,-15.652 16.18233,-15.652c1.5265,0 2.6875,0.11825 4.09575,0.48017v-16.41883zM20.27808,81.24133c-1.10367,-0.35833 -2.01025,-0.48017 -3.17483,-0.48017c-4.75867,0 -7.51067,2.89892 -7.51067,7.98367c0,4.94858 2.63017,7.67908 7.44975,7.67908c1.04275,0 1.88842,-0.05733 3.23575,-0.24008v-14.9425z"></path><path d="M43,71.8315v23.7145c0,7.439 -0.55542,11.55267 -2.193,14.63433c-1.5265,2.96342 -3.53675,4.83392 -7.68983,6.89792l-8.73258,-4.11725c4.15308,-1.93142 6.16692,-3.63708 7.44975,-6.24217c1.34375,-2.66242 1.77017,-6.28517 1.77017,-14.39425v-20.50025h9.3955z"></path><rect x="9.377" y="16" transform="scale(3.58333,3.58333)" width="2.623" height="2.713"></rect><path d="M49.2135,74.80567c4.07067,-1.978 7.96575,-2.84875 12.212,-2.84875c4.73358,0 7.84392,1.30075 9.21992,3.84492c0.77042,1.42258 1.02125,3.27517 1.02125,7.24192v19.37508c-4.128,0.61275 -9.33817,1.0535 -13.16158,1.0535c-7.72567,0 -11.19075,-2.78783 -11.19075,-8.97625c0,-6.69367 4.60458,-9.78608 15.91358,-10.7715v-2.09625c0,-1.73075 -0.84208,-2.35783 -3.16767,-2.35783c-3.40417,0 -7.23833,0.99617 -10.836,2.90967zM63.64358,89.96675c-6.09883,0.61275 -8.08042,1.60892 -8.08042,4.08858c0,1.85617 1.1395,2.72692 3.655,2.72692c1.376,0 2.63375,-0.12183 4.42542,-0.43v-6.3855z"></path><path d="M76.74783,74.14992c5.44667,-1.50858 9.933,-2.19658 14.48025,-2.19658c4.72283,0 8.14492,1.13592 10.17308,3.3325c1.90633,2.07117 2.5155,4.343 2.5155,9.18408v19.00242h-9.2235v-18.61542c0,-3.7195 -1.20042,-5.10267 -4.48633,-5.10267c-1.25775,0 -2.39725,0.12542 -4.24983,0.69875v23.02292h-9.20917z"></path><path d="M108.13425,107.5215c3.29308,1.7415 6.58975,2.54417 10.07633,2.54417c6.16692,0 8.7935,-1.69492 8.7935,-7.79733v-0.18633c-1.8275,0.9245 -3.67292,1.3115 -6.106,1.3115c-8.24883,0 -13.39808,-5.54342 -13.39808,-14.32258c0,-10.90408 7.67192,-17.06383 21.40683,-17.06383c4.03483,0 7.76508,0.43358 12.28008,1.37242l-3.22142,6.91583c-2.50475,-0.4945 -0.20425,-0.07525 -2.09267,-0.258v0.99975l0.12183,4.04917l0.06092,5.23525c0.06092,1.3115 0.06092,2.61583 0.12183,3.92733v2.61583c0,8.22375 -0.68083,11.21942 -2.69108,14.405c-2.93117,4.6655 -8.00517,6.97675 -15.21483,6.97675c-3.66933,0 -6.84417,-0.55542 -10.13725,-1.86692v-8.858zM126.82133,79.73275h-0.30458h-0.68083c-1.8275,-0.06092 -3.97033,0.43358 -5.4395,1.37242c-2.25033,1.30792 -3.41492,3.68008 -3.41492,7.03767c0,4.79092 2.32558,7.53217 6.47867,7.53217c1.28283,0 2.32558,-0.24725 3.53675,-0.61633v-0.69158v-2.61583c0,-1.12517 -0.06092,-2.37217 -0.06092,-3.68008l-0.06092,-4.42183l-0.06092,-3.17483v-0.74175z"></path><path d="M156.1115,71.8315c9.86492,0 15.8885,5.94833 15.8885,15.58033c0,9.87567 -6.278,16.06408 -16.28267,16.06408c-9.87567,0 -15.96733,-5.94475 -15.96733,-15.51583c0.01792,-9.93658 6.29592,-16.12858 16.3615,-16.12858zM155.90725,95.86133c3.78758,0 6.02358,-3.00283 6.02358,-8.22017c0,-5.15642 -2.17508,-8.22017 -5.95908,-8.22017c-3.91658,0 -6.15617,3.00283 -6.15617,8.22017c0.00358,5.21733 2.25392,8.22017 6.09167,8.22017z"></path></g></g></svg>
                             <h5 style="float: left; color: #fafafa; position: absolute; top: 50%; left:  50%;"> <font face = 'Comic Sans MS'> Django </font> </h5>
+                           
+                            <div class="thought">
+                                
+                            </div>
                         </div>
 
                         <div class="frame-items" style="margin-left: 5%; margin-top: 15px; position: relative; filter: brightness(100%); display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
@@ -836,18 +874,28 @@
                                     opacity: 0;"> 
                                     <font face = 'Comic Sans MS'> React </font>
                              </div>
+                             <div class="thought">
+                                
+                            </div>
                         </div>
 
                         <div class = "frame-items" style="margin-left: 5%; filter: brightness(220%); margin-top: 0px;">
                                 <img src="data:image/png;base64,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">
                                 <h5 style="float: left; color: #fafafa; position: absolute; top: 50%; left:  50%;"> <font face = 'Comic Sans MS'> Flask </font> </h5>
+                              
+                                <div class="thought" style="background-color: rgb(26, 25, 25);">
+                                
+                                </div>
                         </div>
 
                         <div class="frame-items" style=" margin-top: 2px;filter: brightness(120%); margin-left: 5%;">
                                 <img style="height: 180px;" src = "https://i.postimg.cc/dQBqVrLY/Untitled-300-300-px.png">
                                 <h5 style="float: left; color: #fafafa; position: absolute; top: 25%; left:  50%;"> <font face = 'Comic Sans MS'> Jinja </font> </h5>
+                                <div class="thought" style="color: #fafafa;">
+                                
+                                </div>
                         </div>
-
+ 
                 </div>
         </body>
    </html>
