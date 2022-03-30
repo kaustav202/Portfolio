@@ -1002,6 +1002,96 @@ section#timeline article:nth-child(5) div.inner h2:after {
             margin-top: 20px;
             padding: 35px 0px 0px 5px;
 }
+
+.pulled a {
+  color: #bbbbc4;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.pulled a:hover {
+  color: #fc3565;
+}
+
+.pulled .top {
+  padding-bottom: 5rem;
+}
+
+.pulled ul li {
+  list-style: none;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.pulled{
+    padding-left: 10%;
+}
+
+.posts{
+    padding-left: 0;
+}
+
+.pulled h1 {
+  color: white;
+  font-size: 2.1rem;
+}
+
+.pulled ul li span{
+  font-size:1.1rem;
+}
+
+span.new {
+    background-color: #fc3565;
+    font-weight: 700;
+    padding: .2rem;
+    margin-left: .4rem;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0 20px 0 20px;
+    min-height: 30%;
+}
+
+
+
+.one-half{
+    width: 48%;
+    margin-left: 20px;
+    padding: 20px;
+    top: 0;
+    padding-top: 0;
+}
+
+.column{
+    height: 100%;
+}
+
+.one-half h1{
+    width: 100%;
+    text-align: start;
+    margin-left: 35px;
+}
+@media screen and (max-width: 900px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .one-half{
+        width: 90%;
+        margin-top: 35px;
+    }
+}
+
       </style>
         
     </head>
@@ -1462,7 +1552,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
                         </div>
         </div>
 
-        <!--
+        
 
                 <h1 id = "timeline_header">Positions Timeline</h1>
                 <section id="timeline">
@@ -1523,7 +1613,26 @@ section#timeline article:nth-child(5) div.inner h2:after {
                     </article>
                   </section>
 
-                -->
+
+                  <h1 style="color: white;text-align: start; padding-left: 35%; margin-top: 10%;font-size: 36px;"> Technical Blogs and Articles</h1>
+                 
+                  <div class="row" >
+                    <div class="one-half column">
+                      <div class="pens pulled">
+                        <h1>Articles</h1>
+                        <ul><li><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/j-w-v/pen/DIcJx">Pricing Tables</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/j-w-v/pen/RrMLjV">Portfolio Home Page</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/j-w-v/pen/PwqNvW">Login Process</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/j-w-v/pen/ORkmKo">Responsive Blog Homepage</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/j-w-v/pen/ZYLGMZ">Portfolio Opening Page</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/j-w-v/pen/bEVvLM">Pricing Tables: Black And Yellow</a></li></ul>
+                      </div>
+                    </div>
+              
+                    <div class="one-half column">
+                      <div class="posts pulled">
+                        <h1>Posts</h1>
+                        <ul><li><a href="https://www.j-w-v.com/writing/index.php/20-awe-inspiring-codepen-examples-you-can-learn-from" target="_blank" rel="noopener noreferrer">20 Awe-Inspiring Codepen Examples You Can Learn From <span class="new">NEW</span></a></li><li><a href="https://www.j-w-v.com/writing/index.php/hero-images-20-free-places-to-find-them" target="_blank" rel="noopener noreferrer">Hero Images &amp; 20 Free Places To Find Them </a></li><li><a href="https://www.j-w-v.com/writing/index.php/18-mobile-first-css-frameworks" target="_blank" rel="noopener noreferrer">18 Mobile First CSS Frameworks </a></li><li><a href="https://www.j-w-v.com/writing/index.php/how-i-grew-as-a-javascript-developer" target="_blank" rel="noopener noreferrer">How I Grew As A JavaScript Developer </a></li><li><a href="https://www.j-w-v.com/writing/index.php/css-s-undersung-property-box-sizing" target="_blank" rel="noopener noreferrer">CSS's undersung property: box-sizing </a></li></ul>
+                      </div>
+                    </div>
+                  </div>
+                
+              
         </body>
    </html>
 
