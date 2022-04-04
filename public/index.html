@@ -13,7 +13,7 @@
        <style>
            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap');
            @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Josefin+Sans&family=Open+Sans&display=swap');
-           @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&&family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
             
         body{ background: #222; align-self: center ; justify-content: center; }
 
@@ -148,10 +148,27 @@
             height: 100%;
             transition: .4s ease;
         }
-        .intro {  min-height: 200px; max-height: 26vh; font-family: 'Roboto';color:white;font-weight: 500; margin-left: 35px;padding:0px; margin-right: 18%; margin-top: 10px;}
-        .intro_head { color: white;}
+        .intro { 
+             height: 40vh;
+             color:white;
+             margin-left: 35px;
+             margin-bottom: 0px;
+             padding:0px 0px 0px 0px;
+             margin-right: 15%;
+             overflow: hidden;
+            }
+        .intro h2{
+            margin-top: 1%;
+            font-family: 'Trebuchet MS';
+            font-size: 24px;
+            padding-left: 5px;
+        }
         .intro span>p{
-            font-size: 1.35vmax;
+            margin-top: 20px;
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 28px;
         }
   
         @media all and (max-width: 1000px)  {  .intro span>p  { font-size:1.8vmax;  } }
@@ -1042,11 +1059,12 @@ section#timeline article:nth-child(5) div.inner h2:after {
   
        
         <div class = "intro">
-          <div class="intro_head">
-              <h2>About  Me..</h2>
-          </div>
+          
           <span>
+            
+            <h2>About  Me..</h2>
             <p>
+                
                 Welcome!!  This is my Portfolio site deployed on firebase..
             </br>
                  Hi !! , I'm a computer Engineering Student currently in 3rd year posessing good technical understanding especially in computer science fundamentals.
