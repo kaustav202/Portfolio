@@ -1,6 +1,7 @@
 
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
@@ -180,8 +181,18 @@
         }
         @media all and (max-width: 1000px)  {
             .intro span>p{
-                font-size:1.8vmax;
+                font-size:1.7vmax;
             }
+        }
+        @media all and (max-width: 500px){
+            .intro {
+                padding: 0;
+                margin-left: 35px;
+                margin-right: 10px;
+                padding-right: 10px;
+                width: 100%;
+            }
+
         }
         
         .contact{  
@@ -245,12 +256,10 @@
         .services :nth-child(3){
             padding-top: 35px;
         }
-        .services :nth-child(3)>svg{
-            margin-left: 2vw;
-        }
+        
         .services :nth-child(1)>svg{
             padding-top: 25px;
-            margin-left:4.5vw;
+            margin-left: 4.5vw;
         }
         .services :nth-child(4)>svg{
             margin-left: 0px;
@@ -282,7 +291,7 @@
             width: 100%;
             background:#222;
             box-sizing: border-box;
-            padding: 5px;
+            padding: 0px;
             padding-left: 70px;
             margin: 0;
             margin-top: -20px;
@@ -296,14 +305,14 @@
   
         .s{
             box-sizing: border-box;
-            min-height: 80%;
+            height: 100%;
             background: #222;
-            min-width: 150px;
-            width: 20%;
-            margin: 10px 5px 10px 0px;
+            width: auto;
+            margin: 10px 5px 10px 3%;
             padding: 10px;
-            margin-left: 6.5%;
+            margin-left: 14%;
         }
+        
         .one{
             margin-left: -1.5%;
         }
@@ -311,7 +320,7 @@
         .sec{
             margin-top: 25px;
         }
-        
+
         h1{
             text-align: center;
             margin-top: 0;
@@ -513,14 +522,14 @@
             color: white;
             width: 100%;
             margin-top : 20px;
-            margin-left: 28%;
+            margin-left: 45%;
         }
 
         .two .s_text{
             color: white;
             width: 100%;
             margin-top : 12px;
-            margin-left: 15%;
+            margin-left: 16%;
             
             
         }
@@ -528,7 +537,7 @@
         .three .s_text{
             color: white;
             margin-top: 12px;
-            margin-left: 18%;
+            margin-left: 22%;
         }
 
         .four .s_text{
@@ -536,13 +545,97 @@
             width: 100%;
             text-align: start;
             font-size: 15.5px;
-            margin-left: 5%;
+            margin-left: 12%;
             padding: 0px;
         }
 
        .contacts p img { max-height: 50px;  }
         @media only screen and ( max-width : 900px ){
 
+        }
+
+        @media all and (max-width: 530px)  {  
+            .services{
+                margin-left: 10%;
+                padding-left: 0;
+                justify-content: flex-start;
+            }
+            .services svg{
+                margin-left: 0px;
+            }
+            .s{
+                margin-left: 10px;
+                padding: 0;
+            }
+            .one {
+                margin-top: -4%;
+            }
+            .one>svg{
+                padding-right: 20px;;
+                margin: 0;
+            }
+            .one .s_text{
+                width: 30%;
+                float: left;
+                margin-left: 7%;
+                margin-bottom: px;
+                position: absolute;
+                font-size: 15px;
+            }
+            .two{
+                margin-left: 6%;
+                margin-top: 0%;
+                padding-left: 35px;
+                font-size: 16px;
+            }
+            .three{
+                padding: 0;
+                margin: 0;
+                margin-left: 3%;
+            }
+            .four{
+                padding-left: 5px;
+                margin-left: 6%;
+                margin-top: 2%;
+                font-size: 16px;
+            }
+            .four>svg{
+                padding-left: 5px;
+            }
+            .four .s_text{
+                margin-left: 7%;
+                float: left;
+                position: absolute;
+            }
+        }
+
+        @media (min-width: 530px) and (max-width: 650px){
+            .three {
+                margin-left: 0;
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 1250px){
+            
+            .s{
+                margin-left: 10%;
+            }
+            .one{
+                margin-left: -50px;
+            }
+        }
+        @media (min-width: 650px) and (max-width: 1050px){
+            .s{
+                margin-left: 10%;
+            }
+        }
+        @media (min-width: 830px) and (max-width: 1050px){
+            .s{
+                margin-left: 3%;
+            }
+            .one{
+                margin-left: -50px;
+            }
         }
 
         h5{
@@ -1142,7 +1235,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
                     width="115" height="115"
                     viewBox="0 0 172 172"
                     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2ecc71"><path d="M18.8125,1.34375c-9.675,0 -17.46875,7.79375 -17.46875,17.46875v134.375c0,9.675 7.79375,17.46875 17.46875,17.46875h134.375c9.675,0 17.46875,-7.79375 17.46875,-17.46875v-134.375c0,-9.675 -7.79375,-17.46875 -17.46875,-17.46875zM18.8125,9.40625h134.375c5.24062,0 9.40625,4.16563 9.40625,9.40625v20.15625h-153.1875v-20.15625c0,-5.24062 4.16563,-9.40625 9.40625,-9.40625zM24.1875,20.15625c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h5.375c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM45.6875,20.15625c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h5.375c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM9.40625,47.03125h153.1875v106.15625c0,5.24062 -4.16563,9.40625 -9.40625,9.40625h-134.375c-5.24062,0 -9.40625,-4.16563 -9.40625,-9.40625zM32.25,80.625c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28437 1.74687,4.03125 4.03125,4.03125h49.71875c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM103.46875,80.625c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125v40.3125c0,2.28437 1.74688,4.03125 4.03125,4.03125h36.28125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-40.3125c0,-2.28437 -1.74687,-4.03125 -4.03125,-4.03125zM107.5,88.6875h28.21875v32.25h-28.21875zM32.25,100.78125c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28437 1.74687,4.03125 4.03125,4.03125h49.71875c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM32.25,120.9375c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28437 1.74687,4.03125 4.03125,4.03125h21.5c2.28438,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74687,-4.03125 -4.03125,-4.03125zM75.25,120.9375c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28437 1.74688,4.03125 4.03125,4.03125h6.71875c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125z"></path></g></g></svg>
-               <div class="s_text">
+               <div class="s_text" >
                    UI DESIGN
                </div>
                   </div>
