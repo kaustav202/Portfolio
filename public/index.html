@@ -188,9 +188,7 @@
             .intro {
                 padding: 0;
                 margin-left: 35px;
-                margin-right: 10px;
                 padding-right: 10px;
-                width: 100%;
             }
 
         }
@@ -244,8 +242,8 @@
                 flex-wrap: nowrap;
                 flex-direction: row;
                 width: 90%;
-                margin-left: 45px;
-                margin-top: -5px;
+                margin-left: 5%;
+                margin-top: -15px;
                 margin-bottom: 10%;
             }
             .contact a{
@@ -518,6 +516,30 @@
             margin-top: 150px;
         }
 
+        @media screen and (max-width: 830px) {
+            .skill_cont{
+                flex-wrap: wrap;
+                margin-left: 0;
+            }
+            .soft_skills{
+                width: 90%;
+                margin-left: 0;
+            }
+            ol{
+                margin-left: -10px;
+            }
+            .libraries{
+                width: 90%;
+                margin-left: 0;
+                margin-top: -10%;
+            }
+
+            .rem{
+                display: none;
+            }
+
+        }
+
         .one .s_text{
             color: white;
             width: 100%;
@@ -554,11 +576,21 @@
 
         }
 
-        @media all and (max-width: 530px)  {  
+        @media all and (max-width: 530px)  { 
+             
+            .container .lists .info h3{
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 0;
+            }
+            .labels{
+                margin-right: 0;
+                padding-right: 0;
+            }
             .services{
-                margin-left: 10%;
                 padding-left: 0;
-                justify-content: flex-start;
+                justify-content: space-evenly;
             }
             .services svg{
                 margin-left: 0px;
@@ -568,50 +600,79 @@
                 padding: 0;
             }
             .one {
-                margin-top: -4%;
+                margin-top: 4%;
             }
             .one>svg{
                 padding-right: 20px;;
                 margin: 0;
             }
             .one .s_text{
-                width: 30%;
                 float: left;
                 margin-left: 7%;
-                margin-bottom: px;
                 position: absolute;
                 font-size: 15px;
+                width: fit-content;
             }
             .two{
-                margin-left: 6%;
-                margin-top: 0%;
-                padding-left: 35px;
+                margin-left: 3%;
+                margin-top: 8%;
+                padding-left: 15px;
                 font-size: 16px;
+            }
+            .two .s_text{
+                float: left;
+                position: absolute;
+                margin-left: 3px;
+                width: fit-content;
             }
             .three{
                 padding: 0;
                 margin: 0;
                 margin-left: 3%;
+                margin-top: 8%;
             }
-            .four{
-                padding-left: 5px;
-                margin-left: 6%;
-                margin-top: 2%;
-                font-size: 16px;
-            }
-            .four>svg{
-                padding-left: 5px;
-            }
-            .four .s_text{
-                margin-left: 7%;
+            .three .s_text{
+                margin-left: 15px;
                 float: left;
                 position: absolute;
+                width: fit-content;
+            }
+            .four{
+                padding-left: 0px;
+                margin-left: 6%;
+                margin-top: 9%;
+                font-size: 17px;
+            }
+            .four>svg{
+                padding-left: 0px;
+            }
+
+            .container{
+                margin-left: 0;
+                margin-right: 0;
+                padding: 0;
+            }
+            
+            .container .lists{
+                padding-right: 0;
+                margin-right: 0;
+                height: 13rem;
+            }
+
+            .info h3{
+                font-size: 18px;
             }
         }
 
         @media (min-width: 530px) and (max-width: 650px){
             .three {
                 margin-left: 0;
+            }
+        }
+
+        @media (min-width: 530px) and (max-width: 1050px){
+            .one .s_text{
+                margin-left: 45px;
             }
         }
 
@@ -1426,9 +1487,9 @@ section#timeline article:nth-child(5) div.inner h2:after {
             <ol>
                 <li>Linux</li>
                 <li>Data Structures and Algorithms</li>
-                <li>OOP</li>
+                <li class="rem">OOP</li>
                 <li>Multithreading and Synchronisation</li>
-                <li> Socket Programming</li>
+                <li class="rem"> Socket Programming</li>
             </ol>
         </div>
             
@@ -1437,7 +1498,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
 
             <ol>
                 <li> Data Mining </li>
-                <li>Web Scraping</li>
+                <li class="rem">Web Scraping</li>
                 <li>Data Analytics</li>
                 <li>RDBMS</li>
                 <li>Software Architecture and Design</li>
