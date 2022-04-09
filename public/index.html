@@ -178,11 +178,10 @@
             font-size: 1.3em;
             line-height: 28px;
         }
-  
-        @media all and (max-width: 1000px)  {  
-            .intro span>p{ 
-                font-size:1.8vmax;  
-            } 
+        @media all and (max-width: 1000px)  {
+            .intro span>p{
+                font-size:1.8vmax;
+            }
         }
         
         .contact{  
@@ -216,12 +215,32 @@
             top: -6;
             left: 3;
         }
+
+        
         .contact :nth-child(1){
             margin-left: 3px;
             margin-top: 0;
         }
         .contact :nth-child(1)>span{
             left: 8px;
+        }
+
+        @media all and (max-width: 950px)  {  
+            .top{
+                flex-direction: column;
+            }
+            .contact{
+                flex-wrap: nowrap;
+                flex-direction: row;
+                width: 90%;
+                margin-left: 45px;
+                margin-top: 25px;
+                margin-bottom: 10%;
+            }
+            .contact a{
+                margin-top: 0px;
+                margin-left: 12%;
+            }
         }
         .services :nth-child(3){
             padding-top: 35px;
@@ -288,7 +307,7 @@
         .one{
             margin-left: -1.5%;
         }
-  
+
         .sec{
             margin-top: 25px;
         }
