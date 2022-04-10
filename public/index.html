@@ -1184,6 +1184,19 @@
             }
             
         }
+
+        .noSelect {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+        .noSelect:focus {
+        outline: none !important;
+}
 section#timeline {
   width: 80%;
   margin: 90px auto;
@@ -1560,13 +1573,13 @@ section#timeline article:nth-child(5) div.inner h2:after {
   
         <h1 class =" soft_heading"> Tech Skills  </h1>
   
-      <section class="skill_cont">
+      <section class="skill_cont noSelect">
         <div class="soft_skills">
             <ol>
                 <li>Linux</li>
                 <li>Data Structures and Algorithms</li>
                 <li class="rem">OOP</li>
-                <li>Multithreading and Synchronisation</li>
+                <li>Multithreading & Synchronisation</li>
                 <li class="rem"> Socket Programming</li>
             </ol>
         </div>
