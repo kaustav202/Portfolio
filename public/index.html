@@ -11,17 +11,22 @@
         @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Josefin+Sans&family=Open+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&&family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
         
-        body{ background: #222; align-self: center ; justify-content: center; }
+        body{ 
+            background: #222; 
+            align-self: center ; 
+            justify-content: center;
+            opacity: 0;
+         }
 
         .container{margin:85px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(40% , 1fr)); grid-template-rows: repeat(3, minmax(220px , auto)); grid-gap:30px ;}
-        .container  .lists { position: relative; display: flex; text-align: center; margin: 10px; color:#fff; background: #333; padding: 0px; height: 14.8rem;border-radius: 3%;     box-shadow: 0px 5px 10px 5px rgb(243, 149, 193);}
+        .container  .lists { position: relative; display: flex; text-align: center; margin: 10px; color:#fff; background: #333; padding: 0px; height: 14.5rem;border-radius: 3%;     box-shadow: 0px 5px 10px 5px rgb(243, 149, 193);}
         @media screen and (max-width : 1050px) {
             .container{margin:85px 50px 0px 50px ; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(100% , auto)); grid-template-rows: repeat(3, minmax(220px , auto)); grid-gap:30px ;}
             .container .lists{
                 height: 15rem;
             }
         }
-        .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 73%; float: left; width: 45%; border-radius: 50%;border: 1px solid black;opacity: 1;transition: all 0.1s ease;
+        .container .lists .sub {position: relative; margin: 30px 20px 0px 30px; padding:0px; height: 72%; float: left; width: 45%; border-radius: 50%;border: 1px solid black;opacity: 1;transition: all 0.1s ease;
          }
         .container .lists .sub img{ height: 100%; width: 100%; border-radius: 50%;   box-shadow: -19px 13px 22px -6px rgba(0,0,0,1);}
         .info{height: 50%; width: 100%; opacity: 1; transition: all  0.1s ease;}
@@ -43,7 +48,8 @@
             display: flex;
             align-items: center;
             justify-content: start;
-            opacity: 1; transition: all  0.1s ease;
+            opacity: 1; 
+            transition: all  0.1s ease;
             flex-wrap: wrap;
         }
         .labels>img{
@@ -2019,5 +2025,9 @@ section#timeline article:nth-child(5) div.inner h2:after {
         var an = document.getElementsByClassName('wrapper');
         an[0].style.display = 'none';
         }, 5002)
+
+        setTimeout( () => {
+            document.querySelector('body').style.opacity = 1;
+        }, 1000)
         </script>
    </html>
