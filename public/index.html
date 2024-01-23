@@ -1441,11 +1441,11 @@ section#timeline article:nth-child(5) div.inner h2:after {
 }
 
 :root {
-  --bg: #fff;
-  --logo: #333;
+  --bg: #222;
+  --logo: #ffffffd8;
   --logo-span: #061494;
-  --text: #333;
-  --p-text: #6e6e6e;
+  --text: #ffffffec;
+  --p-text: #ffffffd8;
   --btn: #fefeff;
   --btnBG: #061494;
   --name: linear-gradient(90deg, #6a0e72, #099cfd, #ff0984);
@@ -1454,7 +1454,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
 }
 
 .outwrap .dark {
-  --bg: #000000;
+  --bg: #222;
   --themeBG: #e6e6e6;
   --theme: #1f1f1f;
   --logo: #eeeeee;
@@ -1473,9 +1473,11 @@ section#timeline article:nth-child(5) div.inner h2:after {
   width: 750px;
   word-wrap: wrap;
 }
+
 @media (width < 1000px) {
   .bio {
     width: 300px;
+    font-weight: bold;
   }
 }
 
@@ -1486,6 +1488,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   top: 100px;
   animation: animateColor 8s ease-in-out infinite;
 }
+
 @keyframes animateColor {
   50% {
     transform: translateY(50px);
@@ -1500,6 +1503,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   height: 550px;
   animation: avatar 8s ease-in-out infinite;
 }
+
 @keyframes avatar {
   50% {
     transform: translateX(50px);
@@ -1554,6 +1558,8 @@ section#timeline article:nth-child(5) div.inner h2:after {
   list-style: none;
   font-weight: 500;
   font-size: 1.2rem;
+  color: #ffffffd8;
+  font-weight: bold;
 }
 .wrapheader ul li a {
   color: var(--logo);
@@ -1584,11 +1590,13 @@ section#timeline article:nth-child(5) div.inner h2:after {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
 .wrapcontent p {
   font-size: 1rem;
   color: var(--p-text);
   margin: 10px 0;
 }
+
 .wrapcontent button {
   position: relative;
   background: var(--btnBG);
@@ -1604,6 +1612,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   cursor: pointer;
   transition: 0.5s;
 }
+
 .wrapcontent button.chat {
   background: transparent;
   color: var(--text);
