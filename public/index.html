@@ -1430,10 +1430,295 @@ section#timeline article:nth-child(5) div.inner h2:after {
             transform: translateX(10px);
         }
     }
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  user-select: none;
+}
+
+:root {
+  --bg: #fff;
+  --logo: #333;
+  --logo-span: #061494;
+  --text: #333;
+  --p-text: #6e6e6e;
+  --btn: #fefeff;
+  --btnBG: #061494;
+  --name: linear-gradient(90deg, #6a0e72, #099cfd, #ff0984);
+  --theme: #e6e6e6;
+  --themeBG: #1f1f1f;
+}
+
+.outwrap .dark {
+  --bg: #000000;
+  --themeBG: #e6e6e6;
+  --theme: #1f1f1f;
+  --logo: #eeeeee;
+  --logo-span: #08c5ff;
+  --btnBG: #07c9cf;
+  --p-text: #c7c7c7;
+  --text: #ffffff;
+  --name: linear-gradient(45deg, #ff4c05, #09e1fd, #ff09a1);
+}
+
+.outwrap a {
+  text-decoration: none;
+}
+
+.bio {
+  width: 750px;
+  word-wrap: wrap;
+}
+@media (width < 1000px) {
+  .bio {
+    width: 300px;
+  }
+}
+
+.outwrap .colors {
+  position: absolute;
+  right: 0;
+  max-width: 600px;
+  top: 100px;
+  animation: animateColor 8s ease-in-out infinite;
+}
+@keyframes animateColor {
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+.outwrap .men {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  max-height: 90vh;
+  height: 550px;
+  animation: avatar 8s ease-in-out infinite;
+}
+@keyframes avatar {
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+.outwrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px;
+  background: var(--bg);
+  transition: 0.5s;
+}
+
+.outwrap .dash {
+  opacity: 1;
+  animation: sho-dash 1.2s linear infinite;
+}
+@keyframes sho-dash {
+  50% {
+    opacity: 0;
+  }
+}
+
+.wrapheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapheader .logo-top {
+  color: var(--logo);
+  font-size: 2rem;
+  transition: 0.5s;
+  font-weight: 700;
+}
+.wrapheader .logo-top span:not(.dash) {
+  color: var(--logo-span);
+}
+.wrapheader ul {
+  display: flex;
+  gap: 40px;
+}
+.wrapheader ul li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.wrapheader ul li a {
+  color: var(--logo);
+}
+
+.wrapcontent {
+  position: relative;
+  max-width: 1200px;
+  z-index: 10;
+}
+.wrapcontent h3,
+.wrapcontent h2,
+.wrapcontent p {
+  color: var(--text);
+  transition: 0.5s;
+}
+.wrapcontent h3 {
+  font-size: 2em;
+  font-weight: 200;
+}
+.wrapcontent h2 {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+.wrapcontent h2 span {
+  background: var(--name);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.wrapcontent p {
+  font-size: 1rem;
+  color: var(--p-text);
+  margin: 10px 0;
+}
+.wrapcontent button {
+  position: relative;
+  background: var(--btnBG);
+  color: var(--btn);
+  outline: none;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1ch;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapcontent button.chat {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--btnBG);
+}
+
+.sci {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+.sci li {
+  list-style: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background: var(--btnBG);
+  transition: 0.5s;
+}
+.sci li a {
+  color: var(--btn);
+}
+.sci li:hover {
+  border: 1px solid var(--btnBG);
+  background: transparent;
+}
+.sci li:hover a {
+  color: var(--btnBG);
+}
+
+.theme {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  height: 60px;
+  width: 60px;
+  background: var(--themeBG);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.theme a {
+  color: var(--theme);
+  text-transform: uppercase;
+}
+.theme:active {
+  scale: 0.9;
+}
+
+.light #dark {
+  display: none;
+}
+
+.dark #light {
+  display: none;
+}
       </style>
         
     </head>
     <body>
+
+        
+<div class = "outwrap">
+				
+    <div class="light">
+        <section class="banner">
+            <div class="wrapheader">
+                <a href="#" class="logo-top">My<span>Porfolio</span><span class="dash">_</span></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="wrapcontent">
+                <h3>Hi<span class="dash">_</span></h3>
+                <h2>I'm <span id="typedtext"></span></h2>
+                <p class="bio">Hi, I'm a software engineer with a lot of experience in building products and translating business cases into software solutions.
+                    Possessing a vast experience in implementation of a various technical frameworks , tools and arcitechtures.
+                </p>
+                <button>Hire Me</button><button class="chat">Let's Chat!</button>
+            </div>
+    
+            <!-- <img src="https://res.cloudinary.com/liquidtime/image/upload/v1682714166/colors_ybo5v2.png" alt="colors" class="colors">
+            <img src="https://res.cloudinary.com/liquidtime/image/upload/v1682714165/37589-6-aang-transparent-background_vcywyz.png" alt="model" class="men"> -->
+    
+            <ul class="sci">
+                <li><a href="#" target="_blank">fb</a></li>
+                <li><a href="#" target="_blank">git</a></li>
+                <li><a href="#" target="_blank">tw</a></li>
+                <li><a href="#" target="_blank">pen</a></li>
+                        </ul>
+            <div class="theme-wrap">
+    
+                <div class="theme">
+                    <a href="#" id="light">Light</a>
+                    <a href="#" id="dark">Dark</a>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
   
         <div class="main">
 
@@ -2034,4 +2319,37 @@ section#timeline article:nth-child(5) div.inner h2:after {
             document.querySelector('body').style.opacity = 1;
         }, 1000)
         </script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+<script>
+    
+        
+    let banner = document.getElementsByClassName('banner');
+    let darkBtn = document.getElementById('dark');
+    let lightBtn = document.getElementById('light');
+    
+    
+    console.log(darkBtn);
+    
+    // ======= Typed Effect=======
+    
+    let typingText = new Typed('#typedtext', {
+        strings: ["Kaustav", "Software Engineer", "Full Stack Developer", "Cloud Architect"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000,
+    })
+    
+    console.log(typingText);
+    
+
+
+    // localStorage.clear()
+    
+    
+          </script>
+
    </html>
