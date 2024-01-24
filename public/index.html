@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <meta property=”og:image” content=”https://i.postimg.cc/wT11fvf1/portpreview.png” />
        <style>
 
@@ -206,13 +207,14 @@
         }
         
         .contact{  
-            width: 68%;
             color: white;
             font-family: Amiri;
             font-weight: 500;
-            margin-top: 30px;
+            margin-top: 0px;
             margin-right: 0;
             right: 0;
+            float: right;
+            position: absolute;
             display: flex;
             flex-direction: column;
 
@@ -283,6 +285,7 @@
 
             .s_header{
                 padding-top: 50px;
+                padding-bottom: 100px;
             }
             
         }
@@ -1626,6 +1629,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   display: flex;
   gap: 20px;
 }
+
 .sci li {
   list-style: none;
   height: 40px;
@@ -1638,13 +1642,16 @@ section#timeline article:nth-child(5) div.inner h2:after {
   background: var(--btnBG);
   transition: 0.5s;
 }
+
 .sci li a {
   color: var(--btn);
 }
+
 .sci li:hover {
   border: 1px solid var(--btnBG);
   background: transparent;
 }
+
 .sci li:hover a {
   color: var(--btnBG);
 }
@@ -1666,6 +1673,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   font-weight: 500;
   font-size: 1.2em;
 }
+
 .theme a {
   color: var(--theme);
   text-transform: uppercase;
@@ -1681,7 +1689,45 @@ section#timeline article:nth-child(5) div.inner h2:after {
 .dark #light {
   display: none;
 }
+
+
+.social-links {
+  position: absolute;
+  right: 1.2em;
+  top: 55%;
+  display: flex; 
+  flex-direction: column;
+  border: 1px solid #fff;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+
+.social-links a {
+  margin: 0.2em;
+  font-size: 1.4em;
+  transition: transform 0.3s ease;
+}
+.social-links a [name="logo-instagram"] {
+  color: rgb(255, 0, 242);
+}
+.social-links a [name="logo-facebook"] {
+  color: royalblue;
+}
+.social-links a [name="logo-twitter"] {
+  color: blue;
+}
+.social-links a [name="logo-whatsapp"] {
+  color: green;
+}
+.social-links a [name="logo-youtube"] {
+  color: red;
+}
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
       </style>
+
         
     </head>
     <body>
@@ -1700,7 +1746,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-    
+
             <div class="wrapcontent">
                 <h3>Hi<span class="dash">_</span></h3>
                 <h2>I'm <span id="typedtext"></span></h2>
@@ -1714,11 +1760,29 @@ section#timeline article:nth-child(5) div.inner h2:after {
             <img src="https://res.cloudinary.com/liquidtime/image/upload/v1682714165/37589-6-aang-transparent-background_vcywyz.png" alt="model" class="men"> -->
     
             <ul class="sci">
-                <li><a href="#" target="_blank">fb</a></li>
+                <li><a href="#" target="_blank">cv</a></li>
                 <li><a href="#" target="_blank">git</a></li>
-                <li><a href="#" target="_blank">tw</a></li>
-                <li><a href="#" target="_blank">pen</a></li>
+                <li><a href="#" target="_blank">ln</a></li>
+                <li><a href="#" target="_blank">repl</a></li>
                         </ul>
+
+                        <div class="social-links">
+                            <a href="#">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="#">
+                              <ion-icon name="logo-discord"></ion-icon>
+                            </a>
+                            <a href="#">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="#">
+                              <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                            <a href="#">
+                              <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                          </div>
             <!-- <div class="theme-wrap">
     
                 <div class="theme">
@@ -1728,7 +1792,16 @@ section#timeline article:nth-child(5) div.inner h2:after {
             </div> -->
         </section>
         </div>
+
+        <!-- <div class ="contact">
+            <a  href="https://drive.google.com/file/d/1R5iMJ5B-lhbUnJtVfy6MLj2YS8HYP_0V/view?usp=sharing"> <img class="c1" src="https://img.icons8.com/office/35/000000/open-resume.png"/><span class="tar">Resume</span></a></br>
+            <a class="c2" href="mailto:gkaustav57@gmail.com"> <img src="https://img.icons8.com/clouds/40/000000/gmail.png"/>  <span>gkaustav57</span></a></br>
+            <a href="https://github.com/kaustav202"> <img src="https://img.icons8.com/fluent/40/000000/github.png"/>  <span>kaustav202</span> </a></br>
+            <a href="https://www.linkedin.com/in/kgan31" > <img class ="c4" src="https://img.icons8.com/doodle/35/000000/linkedin--v2.png" class="lin"/> <span> linkdin </span></a></br>
+          </div> -->
+
     </div>
+</div>
   
         <div class="main">
 
@@ -1738,12 +1811,12 @@ section#timeline article:nth-child(5) div.inner h2:after {
                     
                 </div>
     
-                <div class ="contact">
+                <!-- <div class ="contact">
                   <a  href="https://drive.google.com/file/d/1R5iMJ5B-lhbUnJtVfy6MLj2YS8HYP_0V/view?usp=sharing"> <img class="c1" src="https://img.icons8.com/office/35/000000/open-resume.png"/><span class="tar">Resume</span></a></br>
                   <a class="c2" href="mailto:gkaustav57@gmail.com"> <img src="https://img.icons8.com/clouds/40/000000/gmail.png"/>  <span>gkaustav57</span></a></br>
                   <a href="https://github.com/kaustav202"> <img src="https://img.icons8.com/fluent/40/000000/github.png"/>  <span>kaustav202</span> </a></br>
                   <a href="https://www.linkedin.com/in/kgan31" > <img class ="c4" src="https://img.icons8.com/doodle/35/000000/linkedin--v2.png" class="lin"/> <span> linkdin </span></a></br>
-                </div>
+                </div> -->
     
           </div>
     
@@ -1754,7 +1827,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
             </div>
                   </section>
                
-               <h1 class="s_header" style="margin-top: -40px;"> <p> Services </p> </h1>
+               <h1 class="s_header"> <p> Services </p> </h1>
                <section class="services">
                    
                   <div class="s one">
@@ -2315,6 +2388,9 @@ section#timeline article:nth-child(5) div.inner h2:after {
         </script>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 <script>
