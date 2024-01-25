@@ -1733,7 +1733,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   color: rgba(224, 20, 20, 0.705);
 }
 .social-links a:hover {
-  transform: scale(1.4);
+  transform:  scale(1.4) !important;
 }
 
 </style>
@@ -1751,9 +1751,9 @@ section#timeline article:nth-child(5) div.inner h2:after {
                 <a href="#" class="logo-top">My<span>Porfolio</span><span class="dash">_</span></a>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://github.com/kaustav202/kaustav202/blob/main/fun.md">About</a></li>
+                    <li><a href="https://gist.github.com/kaustav202/051642c9ffb70a90dbe90a687842d50e">Works</a></li>
+                    <li id="topcon"><a href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -1797,7 +1797,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
                 <li><a href="https://github.com/kaustav202" target="_blank">git</a></li>
                 <li><a href="https://www.linkedin.com/in/kgan31" target="_blank">ln</a></li>
                 <li><a href="https://replit.com/@KaustavGanguly" target="_blank">repl</a></li>
-                        </ul>
+            </ul>
 
                         <div class="social-links">
                             <a href="mailto:gkaustav57@gmail.com" target="_blank">
@@ -2406,6 +2406,30 @@ section#timeline article:nth-child(5) div.inner h2:after {
             
         document.querySelector('.main').style.display = 'none';
         document.getElementById('load').classList.add('loader');
+
+        let tar_con = document.getElementById('topcon');
+
+        tar_con.addEventListener('click', ()=>{
+
+            let tar_soc = document.querySelector('.social-links');
+
+            console.log(tar_soc)
+
+            let nest = tar_soc.querySelectorAll('a');
+
+            // tar_soc.focus();
+
+            for (const i of nest){
+                i.style.transform = 'scale(1.4)';
+            }
+
+            
+            setTimeout(()=>{
+                for (const i of nest){
+                i.style.transform = 'scale(1)';
+            }
+            }, 300);
+        })
 
         // For simulation
         setTimeout(() => {
