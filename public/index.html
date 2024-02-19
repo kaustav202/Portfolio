@@ -1919,12 +1919,12 @@ section#timeline article:nth-child(5) div.inner h2:after {
   border-color: #fff;
 }
 
-.owl-dots {
+.owl-pagination {
   text-align: center;
   margin-top: 20px;
 }
 
-.owl-dot {
+.owl-page {
   height: 13px;
   width: 13px;
   margin: 0 5px;
@@ -1934,14 +1934,18 @@ section#timeline article:nth-child(5) div.inner h2:after {
   transition: all 0.3s ease;
 }
 
-.owl-dot.active {
+.owl-page.active {
   width: 35px;
   border-radius: 14px;
 }
 
-.owl-dot.active,
-.owl-dot:hover {
+.owl-page.active,
+.owl-page:hover {
   background: #18365a !important;
+}
+
+.owl-page span{
+    visibility: hidden;
 }
 
 * {
@@ -2889,6 +2893,7 @@ section .proj-title::after {
 
 $(".carousel").owlCarousel({
     // nav: true, // Show next and prev buttons
+    nav : false,
     autoPlay : 3000,
     slideSpeed: 100,
     paginationSpeed: 400,
