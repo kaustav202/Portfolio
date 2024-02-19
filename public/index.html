@@ -2272,14 +2272,14 @@ section .proj-title::after {
       <div class="carousel owl-carousel owl-theme"> 
         <div class="proj-card">
           <div class="proj-box">
-            <img src="https://source.unsplash.com/720x600/?twitter" alt="">
+            <img src="https://source.unsplash.com/720x600/?x-twitter" alt="">
             <div class="proj-text">Real-Time Twitter EDA</div>
             <p>Enter keyword and analyze tweets in real time through twitter API.</p>
           </div>
         </div>
         <div class="proj-card">
           <div class="proj-box">
-            <img src="https://source.unsplash.com/720x600/?shopping" alt="">
+            <img src="https://source.unsplash.com/720x600/?e-commerce" alt="">
             <div class="proj-text">Django Realtors App</div>
             <p>A online portal where realtors meet buyers to trade, buy and sell assets easily.</p>
           </div>
@@ -2728,13 +2728,15 @@ section .proj-title::after {
 //  Owl Carousel  //
 
 $(".carousel").owlCarousel({
-    // nav: true, // Show next and prev buttons
-    nav : false,
+    navigation: false, // Show next and prev buttons
     autoPlay : 3000,
     slideSpeed: 300,
     paginationSpeed: 400,
+    stopOnHover: true,
+    rewindNav : true,
+    rewindSpeed: 0,
     items: 3,
-    loop : true,
+    loop : false,
 //   stagePadding: 0,
 //   autoWidth: true,
     rtl: true
