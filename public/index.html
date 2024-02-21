@@ -431,7 +431,7 @@
             /* margin-left: 20px; */
         }
         .soft_skills{
-            width: 38%;
+            width: 35%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -444,7 +444,7 @@
         }
          ol li{
             font-size: 1.1rem;
-            padding: 20px 30px ;
+            padding: 15px 30px ;
             margin: 15px 0;
             background: rgb(43, 42, 42);
             z-index: 100;
@@ -482,34 +482,34 @@
         }
 
         .soft_skills li:nth-child(1):hover:before{
-            width: 78%;
+            width: 94%;
         }
         .soft_skills li:nth-child(2):hover:before{
-            width: 92%;
+            width: 80%;
         }
         .soft_skills li:nth-child(3):hover:before{
             width: 90%;
         }
         .soft_skills li:nth-child(4):hover:before{
-            width: 81%;
+            width: 85%;
         }
         .soft_skills li:nth-child(5):hover:before{
-            width: 80%;
+            width: 86%;
         }
         .libraries li:nth-child(1):hover:before{
-            width: 84%;
+            width: 95%;
         }
         .libraries li:nth-child(2):hover:before{
-            width: 90%;
-        }
-        .libraries li:nth-child(3):hover:before{
-            width: 87%;
-        }
-        .libraries li:nth-child(4):hover:before{
             width: 92%;
         }
+        .libraries li:nth-child(3):hover:before{
+            width: 90%;
+        }
+        .libraries li:nth-child(4):hover:before{
+            width: 82%;
+        }
         .libraries li:nth-child(5):hover:before{
-            width: 78%;
+            width: 92%;
         }
         .soft_skills ol li:nth-child(1)::before{
             background: #f8baec;
@@ -552,14 +552,15 @@
             justify-content: flex-start;
             align-items: center;
             color: white;
+            padding: 15px 30px ;
             /* margin-left: 50px; */
         }
 
-        .libraries> ol li{
+        /* .libraries> ol li{
             max-height: 4px;
             margin: 12px 0;
             color: white;
-        }
+        } */
                         
         .soft_heading {
             font-family: 'Josefin Sans';
@@ -1621,7 +1622,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
 
 .wrapcontent button {
   position: relative;
-  background: var(--btnBG);
+  background: #0b1aa5a8;
   color: var(--btn);
   outline: none;
   border: none;
@@ -1641,6 +1642,10 @@ section#timeline article:nth-child(5) div.inner h2:after {
   border: 1px solid var(--btnBG);
 }
 
+.wrapcontent button.chat:hover{
+  background: #2632983a;
+}
+
 .sci {
   position: absolute;
   bottom: 30px;
@@ -1657,7 +1662,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  background: var(--btnBG);
+  background: #061494a8;
   transition: 0.5s;
 }
 
@@ -1666,14 +1671,16 @@ section#timeline article:nth-child(5) div.inner h2:after {
 }
 
 .sci li:hover {
-  border: 1px solid var(--btnBG);
-  background: transparent;
+  /* border: 1px solid var(--btnBG); */
+  background:  #4f5698ce;
+  cursor: pointer;
+  color: #000000;
 }
 
 .sci li 
 
 .sci li:hover a {
-  color: var(--btnBG);
+  color: #000000;
 }
 
 .theme {
@@ -2016,13 +2023,13 @@ section .proj-title::after {
 
 </style>
 
-        
+
     </head>
     <body>
 
 
 <div class = "outwrap">
-				
+
     <div class="light">
         <section class="banner">
             <div class="wrapheader">
@@ -2071,7 +2078,7 @@ section .proj-title::after {
             <img src="https://res.cloudinary.com/liquidtime/image/upload/v1682714165/37589-6-aang-transparent-background_vcywyz.png" alt="model" class="men"> -->
     
             <ul class="sci">
-                <li id="text-cv"><a href="https://drive.google.com/file/d/1NP5QdTPUGpBW53EU2KWt4cYRi6jmDIqj/view?usp=sharing" target="_blank"> <span> cv </span> <ion-icon id="ion-cv" name="code-download-outline"></ion-icon> </a>  </li>
+                <li id="text-cv"><a href="https://drive.google.com/file/d/1NP5QdTPUGpBW53EU2KWt4cYRi6jmDIqj/view?usp=sharing" target="_blank"> <span> cv </span> </a>  </li>
                 <li><a href="https://github.com/kaustav202" target="_blank">git</a></li>
                 <li><a href="https://www.linkedin.com/in/kgan31" target="_blank">ln</a></li>
                 <li><a href="https://replit.com/@KaustavGanguly" target="_blank">repl</a></li>
@@ -2348,11 +2355,11 @@ section .proj-title::after {
         <section class="skill_cont noSelect">
           <div class="soft_skills">
               <ol>
-                  <li>Cloud Native Development</li>
+                  <li>Cloud Native Software Development</li>
                   <li>System Design</li>
-                  <li class="rem">Cloud Infrastructures</li>
+                  <li class="rem">Cloud Infrastructure - Azure | AWS</li>
                   <li>Devops - CI/CD</li>
-                  <li class="rem">Backend Development</li>
+                  <li> Data Engineering </li>
               </ol>
           </div>
               
@@ -2360,11 +2367,11 @@ section .proj-title::after {
            <div class="libraries">
   
               <ol>
-                  <li> Data Engineering </li>
+                  <li class="rem">Backend Development</li>
                   <li class="rem">MERN Stack</li>
+                  <li> Django </li>
                   <li> Linux </li>
                   <li> RDBMS </li>
-                  <li> Django </li>
               </ol>
   
           </div>
