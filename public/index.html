@@ -561,17 +561,7 @@
             margin: 12px 0;
             color: white;
         } */
-                        
-        .soft_heading {
-            font-family: 'Josefin Sans';
-            font-weight: 5px;
-            font-size: 40px;
-            text-align: center;
-            line-height: 1.5;
-            color:white;
-            padding-top: 110px;
-            background-image: linear-gradient(to bottom, #1f1f1f 0%, #222 100%);
-        }
+                  
 
         @media screen and (max-width: 830px) {
             .skill_cont{
@@ -2020,6 +2010,44 @@ section .proj-title::after {
   transform: translateX(-50%);
 }
 
+ .soft_heading {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  /* padding: 15px 0px 0px 0px; */
+  padding-top: 105px;
+  background : linear-gradient( to bottom, #1f1f1ed2 0% , #222 100% )
+} 
+
+ .soft_heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #fff;
+}
+
+ .soft_heading::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: #513d1e;
+  /* color: #511e2c; */
+  padding: 0 5px;
+  transform: translateX(-50%);
+  background: #000000;
+  content: "What I Know";
+}
 
 </style>
 
@@ -2220,7 +2248,7 @@ section .proj-title::after {
                                 </div> 
                             </div> 
                                 
-                            <ul class="cd-timeline-navigation">
+                            <ul class="cd-timeline-navigation"> 
                                 <li><a href="#0" class="prev inactive">Prev</a></li>
                                 <li><a href="#0" class="next">Next</a></li>
                             </ul>
@@ -2350,7 +2378,7 @@ section .proj-title::after {
 
   
     
-          <h1 class =" soft_heading"> Technical Skills  </h1>
+    <h1 class ="soft_heading"> Technical Skills  </h1>
     
         <section class="skill_cont noSelect">
           <div class="soft_skills">
