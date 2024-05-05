@@ -2124,6 +2124,134 @@ section .proj-title::after {
   }
 
 }
+#lineCont {
+	 height: 20%;
+}
+ #line {
+	 height: 6px;
+	 width: 70%;
+	 background: white;
+	 border-radius: 5px;
+	 margin: auto;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 position: relative;
+}
+ #span {
+	 display: none;
+	 width: 70%;
+	 margin: auto;
+	 margin-top: 25%;
+	 text-align: center;
+	 color: white;
+}
+ .circle {
+	 width: 20px;
+	 height: 20px;
+	 background: white;
+	 border-radius: 15px;
+	 position: absolute;
+	 top: -7px;
+	 border: 3px solid white;
+	 cursor: pointer;
+}
+ .circle:before {
+	 content: '';
+	 width: 10px;
+	 height: 10px;
+	 background: rgb(220, 76, 143);
+	 position: absolute;
+	 border-radius: 100%;
+	 top: 2px;
+	 left: 2px;
+	 display: none;
+}
+ .circle .popupSpan {
+	 width: auto;
+	 height: auto;
+	 padding: 10px;
+	 white-space: nowrap;
+	 display: inline-block;
+	 color: white;
+	 position: absolute;
+	 top: 20px;
+	 left: -75px;
+	 display: none;
+	 transition: all 0.1s ease-out;
+}
+ .circle.hover:before, .circle.active:before {
+	 display: block;
+}
+ .circle.hover .popupSpan, .circle.active .popupSpan {
+	 display: block;
+}
+ .circle.active .popupSpan {
+	 top: -40px;
+}
+ #mainCont {
+	 height: 500px;
+	 position: relative;
+	 color: white;
+	 font-size: 30px;
+	 text-align: center;
+	 transition: all 0.2s ease-out;
+}
+ #mainCont span {
+	 display: inline-block;
+	 height: 100%;
+	 position: absolute;
+	 top: 30%;
+	 transition: all 0.2s ease-out;
+}
+ #mainCont span.right {
+	 left: 200%;
+}
+ #mainCont span.center {
+	 left: 0% !important;
+}
+ #mainCont span.left {
+	 left: -100%;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+
+.journey-header{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  margin-top: 150px;
+}
+
+.journey-header::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #fff;
+}
+
+.journey-header::after{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: rgba(174, 72, 101, 0.813);
+  padding: 0 5px;
+  transform: translateX(-50%);
+  background: #000000;
+  content: "A brief Timeline";
+}
 
 </style>
 
@@ -2789,6 +2917,20 @@ section .proj-title::after {
             </div>
         </div>
 
+        <div class="journey-title">
+          <h1 class="journey-header">
+            My Journey
+          </h1>
+        </div>
+
+
+        <div id="lineCont"> 
+          <div id="line"></div>
+          <div id="span">Date Placeholder</div>
+        </div>
+        <div id="mainCont">
+        </div>
+        
     </body>
         <script language="javascript" type="text/javascript">
 
@@ -2887,7 +3029,114 @@ $(".carousel").owlCarousel({
 });
 });
 
+   
+
+  //Sample dates
+var dates = ["6/12/2015", "8/15/2015", "10/22/2015", "11/2/2015", "12/22/2015"];
+//For the purpose of stringifying MM/DD/YYYY date format
+var monthSpan = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+//Format MM/DD/YYYY into string
+function dateSpan(date) {
+  var month = date.split('/')[0];
+  month = monthSpan[month - 1];
+  var day = date.split('/')[1];
+  if (day.charAt(0) == '0') {
+    day = day.charAt(1);
+  }
+  var year = date.split('/')[2];
+
+  //Spit it out!
+  return month + " " + day + ", " + year;
+}
+
+//Main function. Draw your circles.
+function makeCircles() {
+  //Forget the timeline if there's only one date. Who needs it!?
+  if (dates.length < 2) {
+    $("#line").hide();
+    $("#span").show().text(dateSpan(dates[0]));
+    //This is what you really want.
+  } else if (dates.length >= 2) {
+    //Set day, month and year variables for the math
+    var first = dates[0];
+    var last = dates[dates.length - 1];
+
+    var firstMonth = parseInt(first.split('/')[0]);
+    var firstDay = parseInt(first.split('/')[1]);
+
+    var lastMonth = parseInt(last.split('/')[0]);
+    var lastDay = parseInt(last.split('/')[1]);
+
+    //Integer representation of the last day. The first day is represnted as 0
+    var lastInt = ((lastMonth - firstMonth) * 30) + (lastDay - firstDay);
+
+    //Draw first date circle
+    $("#line").append('<div class="circle" id="circle0" style="left: ' + 0 + '%;"><div class="popupSpan">' + dateSpan(dates[0]) + '</div></div>');
     
+    $("#mainCont").append('<span id="span0" class="center">' + dateSpan(dates[0]) + '</span>');
+
+    //Loop through middle dates
+    for (i = 1; i < dates.length - 1; i++) {
+      var thisMonth = parseInt(dates[i].split('/')[0]);
+      var thisDay = parseInt(dates[i].split('/')[1]);
+
+      //Integer representation of the date
+      var thisInt = ((thisMonth - firstMonth) * 30) + (thisDay - firstDay);
+
+      //Integer relative to the first and last dates
+      var relativeInt = thisInt / lastInt;
+
+      //Draw the date circle
+      $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + relativeInt * 100 + '%;"><div class="popupSpan">' + dateSpan(dates[i]) + '</div></div>');
+      
+      $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span>');
+    }
+
+    //Draw the last date circle
+    $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + 99 + '%;"><div class="popupSpan">' + dateSpan(dates[dates.length - 1]) + '</div></div>'); 
+    
+    $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span>');
+  }
+
+  $(".circle:first").addClass("active");
+}
+
+makeCircles();
+
+$(".circle").mouseenter(function() {
+  $(this).addClass("hover");
+});
+
+$(".circle").mouseleave(function() {
+  $(this).removeClass("hover");
+});
+
+$(".circle").click(function() {
+  var spanNum = $(this).attr("id");
+  selectDate(spanNum);
+});
+
+function selectDate(selector) {
+  $selector = "#" + selector;
+  $spanSelector = $selector.replace("circle", "span");
+  var current = $selector.replace("circle", "");
+  
+  $(".active").removeClass("active");
+  $($selector).addClass("active");
+  
+  if ($($spanSelector).hasClass("right")) {
+    $(".center").removeClass("center").addClass("left")
+    $($spanSelector).addClass("center");
+    $($spanSelector).removeClass("right")
+  } else if ($($spanSelector).hasClass("left")) {
+    $(".center").removeClass("center").addClass("right");
+    $($spanSelector).addClass("center");
+    $($spanSelector).removeClass("left");
+  }; 
+};
+
+console.log()
 
 
     // localStorage.clear()
