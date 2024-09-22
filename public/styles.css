@@ -2237,6 +2237,30 @@ background: #000000;
 content: "A brief Timeline";
 }
 
+.navs{
+    position: relative;
+    top: -10%;
+}
+
+.navs .timeline-button{
+    padding: 7px;
+    border-radius: 12px;
+    background-color: #857d7dac;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+#leftButton{
+    position: relative;
+    left:5%;
+}
+
+#rightButton{
+    position: relative;
+    margin-left: 95%;
+}
 
   body {
     overflow-x: hidden;

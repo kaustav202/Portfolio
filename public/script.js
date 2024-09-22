@@ -177,13 +177,51 @@ var spanNum = $(this).attr("id");
 selectDate(spanNum);
 });
 
+let leftBtn = document.getElementById('leftButton');
+let rightBtn = document.getElementById('rightButton');
+
+leftBtn.addEventListener('click', ()=>{
+    console.log('left');
+    selectDate('btn-left');
+})
+
+rightBtn.addEventListener('click', ()=>{
+    console.log('right');
+    selectDate('btn-right');
+})  
+
+
 function selectDate(selector) {
+
+    if(selector == 'btn-left'){
+        const activeCircle = $(".circle.active").attr("id");
+        const currentIndex = parseInt(activeCircle.replace("circle", ""));
+        if (currentIndex > 0) {
+            selectDate(`circle${currentIndex - 1}`);
+          }else{
+            selectDate(`circle${dates.length - 1}`);
+          }
+        return;
+    }
+
+    if(selector == 'btn-right'){
+        const activeCircle = $(".circle.active").attr("id");
+        const currentIndex = parseInt(activeCircle.replace("circle", ""));
+        if (currentIndex < dates.length - 1) {
+            selectDate(`circle${currentIndex + 1}`);
+          }else{
+            selectDate(`circle0`);
+          }
+          return;
+    }
+
 $selector = "#" + selector;
 $spanSelector = $selector.replace("circle", "span");
 var current = $selector.replace("circle", "");
 
 $(".active").removeClass("active");
 $($selector).addClass("active");
+
 
 if ($($spanSelector).hasClass("right")) {
 $(".center").removeClass("center").addClass("left")
