@@ -139,7 +139,7 @@ var lastInt = ((lastMonth - firstMonth) * 30) + (lastDay - firstDay);
 
 $("#line").append('<div class="circle" id="circle0" style="left: ' + 0 + '%;"><div class="popupSpan">' + dateSpan(dates[0]) + '</div></div>');
 
-$("#mainCont").append('<span id="span0" class="center">' + dateSpan(dates[0]) + ' <li class="t-content" data-date="01/06/2019"> <h2>' + date_headers[0] + '</h2> <em>'  + dateSpan(dates[0]) + '</em> <p>' +  date_body[0] + '</p> </li> </span>');
+$("#mainCont").append('<span id="span0" class="center">' + ' <div class="t-content"> <h3>' + date_headers[0] + '</h3> <li>'  + dateSpan(dates[0]) + ' <p>' +  date_body[0] + '</p> </li> </div> </span>');
 
 
 for (i = 1; i < dates.length - 1; i++) {
@@ -152,13 +152,13 @@ for (i = 1; i < dates.length - 1; i++) {
 
   $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + relativeInt * 100 + '%;"><div class="popupSpan">' + dateSpan(dates[i]) + '</div></div>');
   
-  $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + ' <li class="t-content" data-date="01/06/2019"> <h2>' + date_headers[i] + '</h2> <em>'  + dateSpan(dates[i]) + '</em> <p>' +  date_body[i] + '</p> </li> </span>');
+  $("#mainCont").append('<span id="span' + i + '" class="right">' +' <div class="t-content"> <h3>' + date_headers[i] + '</h3> <li>'  + dateSpan(dates[i]) + ' <p>' +  date_body[i] + '</p> </li> </div> </span>');
 }
 
 //Draw the last date circle
 $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + 99 + '%;"><div class="popupSpan">' + dateSpan(dates[dates.length - 1]) + '</div></div>'); 
 
-$("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + ' <li class="t-content" data-date="01/06/2019"> <h2>' + date_headers[i] + '</h2> <em>'  + dateSpan(dates[i]) + '</em> <p>' +  date_body[i] + '</p> </li> </span>');
+$("#mainCont").append('<span id="span' + i + '" class="right">' +' <div class="t-content"> <h3>' + date_headers[i] + '</h3> <li>'  + dateSpan(dates[i]) + ' <p>' +  date_body[i] + '</p> </li> </div> </span>');
 }
 
 $(".circle:first").addClass("active");

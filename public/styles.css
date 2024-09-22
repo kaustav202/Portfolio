@@ -2173,9 +2173,10 @@ top: -40px;
 height: 500px;
 position: relative;
 color: white;
-font-size: 30px;
+font-size: 20px;
 text-align: center;
 transition: all 0.2s ease-out;
+padding: 0px 20px;
 }
 #mainCont span {
 display: inline-block;
@@ -2191,6 +2192,8 @@ display: none;
 #mainCont span.center {
 left: 10% !important;
 top: 0%;
+padding: 0px 90px 0px 0px;
+text-align: start;
 }
 #mainCont span.left {
 left: -100%;
@@ -2293,14 +2296,17 @@ content: "A brief Timeline";
 }
 #leftButton{
     position: relative;
-    left:5%;
+    left:10%;
 }
 
 #rightButton{
     position: absolute;
-    margin-left: 90%;
+    margin-left: 85%;
+    bottom: 5px;
 }
-
+.t-content p{
+    font-size: 19px;
+}
   body {
     overflow-x: hidden;
   }
