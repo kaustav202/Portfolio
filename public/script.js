@@ -85,18 +85,20 @@ rtl: true
 
 //Sample dates
 
-var date_headers = ["BTech. Computer Science", "Freelance Web Development", "Backend Developer Intern", "Webops Developer", "Open Source Mentorship", "Software Development Engineer"]
+var date_headers = ["Freelance Web Development", "Backend Developer Intern", "Webops Developer", "Open Source Mentorship", "Software Development Engineer", "Solution Architect - Stealth", "AI/ML Engineering & Systems Programming"]
 
-var date_body = ["Back in June, 2019 I began my journey into the realm of computer science as a novice. Began coding with c/c++ and learning web development. Remained lost in the world of DSA and algo most of the time. Participated in various contests and hackathons to gain exposure.",
-"Started taking up several web development pprojects using the skill-set developed till now. By this time had a good hold over front-end web development using HTML, CSS, JS and also had started getting hands on with frameworks like React.js along with basic concepts of communication protocols, databases and software architecture.",
-"Got my first full time internship with the ed-tech company, building their e-lraning platform backend using Django. Got a lot of exposure to client-server architecture, working with ORMs, Django Rest Frameworks and security middlewares.",
-"Got a chance to work with the SEC student community team.",
-"Giving back to the community by mentoring for several projects in various open source programs such as gssoc, swoc, hacktobefest, codepeak and gdsc kolkata.",
-"Started working with cloud technologies and started learning about DevOps and containerization. Started working with Docker and Kubernetes. Also started learning about CI/CD pipelines and worked with Jenkins and Github Actions."
+var date_body = [
+"Started taking up freelance web development projects using the skill-set developed during my first year of college. By this time had a good hold over front-end web development using HTML, CSS, JS. Also started getting hands-on with frameworks like React.js and Node.js for backend, along with core cs concepts.",
+"Got my first internship with the ed-tech company, building their e-lraning platform backend using Django. Got good exposure to client-server architecture, working with ORMs, Django Rest Framework and security middlewares. Also started learning about the importance of good software architecture and design patterns.",
+"Got a chance to work with the IIT Madras SEC student community team in my 3rd year of college, building their official website and online certification distribution portal using FastAPI and pydantic models. Ensured website availability and responsiveness by optimizing database queries and performance monitoring.",
+"Giving back to the community by mentoring for several projects in various open source programs such as gssoc, swoc, hacktobefest, codepeak and google-dsc. Maintaing my own projects that recieved lots of contributions from the community, while also conducting several workshops and events along with fellow mentors and project leads.",
+"Joined my first full-time role as Founding Engineer at the Startup. Worked in an inter-disciplinary role, wearing multiple hats at the same time. Developed backend services for the flagship product, using Node.js and asynchronous task processing. Worked with various cloud technologies, Azure Big-Data Platforms, DevOps platforms, CI/CD pipelines and containerization.",
+"Worked with computer vison applications using YOLOv5 and ROS, built real-time data streaming applications with distributed architecture using consensus protocols and coordination services.",
+"Worked on Generative AI applications using LLMs and building Agentic RAG systems that autonomously take actions based on user queries, with a multi-layered retrieval process. Also dived into systems programming with Rust and Golang for building efficient, robust and scalable cloud native applications with high concurrency. Also studying applications in embedded systems and uav flight controllers."
 ]
 
-var dates_rel = ["1/1/2022", "4/15/2022", "6/25/2022", "8/1/2022", "9/1/2022", "12/15/2022"]
-var dates = ["6/1/2019", "1/1/2021", "3/1/2022", "6/1/2022", "10/9/2022", "3/1/2023"];
+var dates_rel = ["1/1/2022", "4/5/2022", "5/28/2022", "7/15/2022", "9/24/2022", "11/15/2022", "12/25/2022"]
+var dates = [ "1/1/2021", "3/1/2022", "6/1/2022", "10/9/2022", "3/1/2023", "02/04/2024", "08/06/2024"];
 //For the purpose of stringifying MM/DD/YYYY date format
 var monthSpan = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
