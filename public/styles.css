@@ -2241,25 +2241,64 @@ content: "A brief Timeline";
     position: relative;
     top: -10%;
 }
-
-.navs .timeline-button{
-    padding: 7px;
-    border-radius: 12px;
-    background-color: #857d7dac;
-    color: #fff;
+.navs .timeline-button {
+    padding: 0;
     border: none;
     cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
 }
 
+.navs .timeline-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #857d7dac;
+    border-right: 4px solid #857d7dac;
+    transition: border-color 0.3s ease;
+}
 
+.navs .timeline-button:hover::before {
+    border-color: #a9a9a9ac;
+}
+
+#leftButton::before {
+    transform: translate(-25%, -50%) rotate(-135deg);
+}
+
+#rightButton::before {
+    transform: translate(-75%, -50%) rotate(45deg);
+}
+
+.navs .timeline-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(133, 125, 125, 0.2);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.navs .timeline-button:hover::after {
+    background-color: rgba(169, 169, 169, 0.2);
+}
 #leftButton{
     position: relative;
     left:5%;
 }
 
 #rightButton{
-    position: relative;
-    margin-left: 95%;
+    position: absolute;
+    margin-left: 90%;
 }
 
   body {
