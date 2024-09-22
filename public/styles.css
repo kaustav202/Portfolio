@@ -2185,13 +2185,16 @@ top: 30%;
 transition: all 0.2s ease-out;
 }
 #mainCont span.right {
-left: 200%;
+left: 15%;
+display: none;
 }
 #mainCont span.center {
-left: 0% !important;
+left: 10% !important;
+top: 0%;
 }
 #mainCont span.left {
 left: -100%;
+display: none;
 }
 
 * {

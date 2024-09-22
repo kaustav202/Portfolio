@@ -92,7 +92,7 @@ var date_body = ["Back in June, 2019 I began my journey into the realm of comput
 "Got my first full time internship with the ed-tech company, building their e-lraning platform backend using Django. Got a lot of exposure to client-server architecture, working with ORMs, Django Rest Frameworks and security middlewares.",
 "Got a chance to work with the SEC student community team.",
 "Giving back to the community by mentoring for several projects in various open source programs such as gssoc, swoc, hacktobefest, codepeak and gdsc kolkata.",
-""
+"Started working with cloud technologies and started learning about DevOps and containerization. Started working with Docker and Kubernetes. Also started learning about CI/CD pipelines and worked with Jenkins and Github Actions."
 ]
 
 var dates_rel = ["1/1/2022", "4/15/2022", "6/25/2022", "8/1/2022", "9/1/2022", "12/15/2022"]
@@ -137,7 +137,7 @@ var lastInt = ((lastMonth - firstMonth) * 30) + (lastDay - firstDay);
 
 $("#line").append('<div class="circle" id="circle0" style="left: ' + 0 + '%;"><div class="popupSpan">' + dateSpan(dates[0]) + '</div></div>');
 
-$("#mainCont").append('<span id="span0" class="center">' + dateSpan(dates[0]) + '</span>');
+$("#mainCont").append('<span id="span0" class="center">' + dateSpan(dates[0]) + '</span> <li class="t-content" data-date="01/06/2019"> <h2>' + date_headers[0] + '</h2> <em>'  + dateSpan(dates[0]) + '</em> <p>' +  date_body[0] + '</p> </li>');
 
 
 for (i = 1; i < dates.length - 1; i++) {
@@ -150,13 +150,13 @@ for (i = 1; i < dates.length - 1; i++) {
 
   $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + relativeInt * 100 + '%;"><div class="popupSpan">' + dateSpan(dates[i]) + '</div></div>');
   
-  $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span>');
+  $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span> <li class="t-content" data-date="01/06/2019"> <h2>' + date_headers[i] + '</h2> <em>'  + dateSpan(dates[i]) + '</em> <p>' +  date_body[i] + '</p> </li>');
 }
 
 //Draw the last date circle
 $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + 99 + '%;"><div class="popupSpan">' + dateSpan(dates[dates.length - 1]) + '</div></div>'); 
 
-$("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span>');
+$("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span> <li class="t-content" data-date="01/06/2019"> <h2>' + date_headers[i] + '</h2> <em>'  + dateSpan(dates[i]) + '</em> <p>' +  date_body[i] + '</p> </li>');
 }
 
 $(".circle:first").addClass("active");
