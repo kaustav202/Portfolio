@@ -240,3 +240,22 @@ console.log()
 
 
     // localStorage.clear()
+
+
+async function getImageUrl(query) {
+    const response = await fetch(`https://api.unsplash.com/photos/random?query=${query}&client_id=vaChg5As4ruspaYSaasg5lvTbnrx5F0IyVOrBzJdlqg`);
+    const data = await response.json();
+    return data.urls.regular;
+    }
+    
+    // Set image sources when the page loads
+    window.onload = async function() {
+    document.getElementById('twitter-eda-img').src = await getImageUrl('x-twitter');
+    document.getElementById('elastic-chat-img').src = await getImageUrl('mailbox');
+    document.getElementById('search-genie-img').src = await getImageUrl('neural-network');
+    document.getElementById('micro-os-img').src = await getImageUrl('microcontroller');
+    document.getElementById('uav-flight-img').src = await getImageUrl('drone-flight');
+    document.getElementById('e2e-data-pipeline-img').src = await getImageUrl('data-pipeline');
+    document.getElementById('game-streaming-img').src = await getImageUrl('game-streaming');
+    // Add similar lines for other project images
+}
